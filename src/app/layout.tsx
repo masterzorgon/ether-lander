@@ -5,8 +5,8 @@ import { CookieManager } from '@/components/cookies/cookie-manager'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Radiant',
-    default: 'Radiant - Close every deal',
+    template: '%s - Ether.fi Cash',
+    default: 'Save, grow, spend. On Hyperliquid.',
   },
 }
 
@@ -25,7 +25,7 @@ export default function RootLayout({
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="Social Capital Website"
+          title="Ether.fi Cash — Hyperliquid Cashback"
           href="/blog/feed.xml"
         />
       </head>

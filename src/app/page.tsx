@@ -16,7 +16,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
     description:
-        'Social Capital is where attention becomes a market. Anyone on X can be tokenized and traded like a speculative asset.',
+        'Save, grow, spend.',
 }
 
 function Hero() {
@@ -46,7 +46,7 @@ function Hero() {
                             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-300 pb-4">
                                 <dt className="text-sm/6 text-gray-300">24h Volume</dt>
                                 <dd className="order-first text-6xl font-medium tracking-tight bg-gradient-to-b from-white via-gray-300 to-white bg-clip-text text-transparent">
-                                    $<AnimatedNumber start={100} end={500} />K
+                                    $<AnimatedNumber start={0} end={1.5} decimals={1} />M
                                 </dd>
                             </div>
                             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-300 pb-4">
