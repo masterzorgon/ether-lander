@@ -6,6 +6,7 @@ import { useToast } from "./toast-provider";
 import { validateEmail } from "@/utils/validate-email";
 import { clsx } from "clsx";
 import { Button } from "./button";
+import { Gradient, GradientBackground } from "./gradient";
 
 interface NewsletterProps {
 	// Container and layout props
@@ -38,9 +39,9 @@ interface NewsletterProps {
 export function Newsletter({
 	className,
 	containerClassName,
-	backgroundClassName = "bg-gradient-to-br from-primary/10 to-slate-100",
+	backgroundClassName = "bg-black/10 backdrop-blur-sm border border-gray-700/50",
 	gradientClassName,
-	title = "Join the Social Capital Newsletter",
+	title = "Join the Ether.fi Newsletter",
 	description = "Stay up to date with the latest features and developments.",
 	formClassName,
 	inputClassName,
@@ -121,7 +122,7 @@ export function Newsletter({
 					container: "w-full",
 					title: "text-4xl sm:text-5xl",
 					description: "text-lg",
-					padding: "py-z sm:py-8",
+					padding: "py-8 sm:py-12",
 					margin: "my-6 sm:my-12"
 				};
 			default:
@@ -146,18 +147,21 @@ export function Newsletter({
 			)}>
 				<div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
 					<div className={clsx(
-						"relative isolate overflow-hidden px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32 border border-gray-200",
+						"relative isolate overflow-hidden px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32",
 						backgroundClassName
 					)}>
+						{/* Gradient background */}
+						<Gradient className="absolute inset-0 -z-10" />
+						
 						<h2 className={clsx(
-							"mx-auto text-center font-semibold tracking-tight text-slate-900",
+							"mx-auto text-center font-semibold tracking-tight text-white",
 							variantStyles.container,
 							variantStyles.title
 						)}>
 							{title}
 						</h2>
 						<p className={clsx(
-							"mx-auto mt-6 text-center text-slate-600",
+							"mx-auto mt-6 text-center text-gray-300",
 							variantStyles.container,
 							variantStyles.description
 						)}>
@@ -170,7 +174,7 @@ export function Newsletter({
 							<label htmlFor="email-address" className="sr-only">
 								Email address
 							</label>
-							<div className="rounded-full p-1.5 bg-white outline outline-1 outline-slate-200/20 shadow-sm w-96 flex justify-between items-center">
+							<div className="rounded-full p-1.5 bg-gray-700/50 backdrop-blur-sm outline outline-1 outline-gray-600/50 shadow-sm w-96 flex justify-between items-center">
 								<input
 									id="email-address"
 									name="email"
@@ -180,7 +184,7 @@ export function Newsletter({
 									autoComplete="email"
 									disabled={isSending}
 									className={clsx(
-										"min-w-0 flex-auto px-3.5 py-2 text-base text-slate-900 placeholder:text-slate-400 sm:text-sm/6 disabled:opacity-50 disabled:cursor-not-allowed outline-none",
+										"min-w-0 flex-auto px-3.5 py-2 text-base text-white placeholder:text-gray-400 sm:text-sm/6 disabled:opacity-50 disabled:cursor-not-allowed outline-none bg-transparent",
 										inputClassName
 									)}
 								/>

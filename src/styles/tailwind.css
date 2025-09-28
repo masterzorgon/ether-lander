@@ -6,6 +6,12 @@
   
   /* Add your primary color */
   --color-primary: #fd3bb8;
+
+  /* Add your custom colors */
+  --color-vangardPurple: #cca978; 
+  --color-deepBlue: #474276;
+  --color-lightBlue: #dccbb2;
+  --color-darkMatter: #0a0a0a;
 }
 
 @keyframes move-x {
