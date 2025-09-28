@@ -34,13 +34,13 @@ function Hero() {
                         <span className="inline-block align-middle mx-3">
                             <img src="/HL.svg" alt="Hyperliquid Icon" width={60} height={60} className="inline-block align-middle mb-6 mx-2" />
                         </span>
-                        HYPE
+                        $HYPE
                         <br />
                         Without Selling
                     </h1>
 
                     <p className="my-8 max-w-3xl text-xl leading-8 font-medium text-white/75 sm:text-2xl sm:leading-9">
-                        Borrow against your $HYPE and $beHYPE and spend anywhere with a globally accepted Visa card. Keep trading, keep earning yield, and unlock real-world utility with your HYPE.
+                        Borrow against your $$HYPE and $$beHYPE and spend anywhere with a globally accepted Visa card. Keep trading, keep earning yield, and unlock real-world utility with your $$HYPE.
                     </p>
 
                     <div className="max-lg:mt-16 lg:col-span-1">
@@ -94,46 +94,11 @@ function BentoSection() {
                 </Heading>
 
                 <div className="sm:mb-[-500px] mt-10 grid grid-cols-1 gap-4 sm:mt-20 lg:grid-cols-6 lg:grid-rows-2">
-                    {/* <BentoCard
-                        dark
-                        eyebrow="You Own Your Assets"
-                        title="Non-Custodial"
-                        description="Your HYPE and beHYPE are stored in your wallet, you are the sole owner of your assets."
-                        graphic={
-                            <div className="h-80 bg-[url(https://www.ether.fi/videos/cash/fallback_cash.jpg)]" />
-                        }
-                        fade={['bottom']}
-                        className="max-lg:rounded-t-4xl lg:col-span-2 lg:rounded-bl-4xl lg:rounded-tl-4xl"
-                    />
-
-                    <BentoCard
-                        dark
-                        eyebrow="Spend Globally"
-                        title="Over 100M Accepted Merchants"
-                        description="Buy a coffee or book a flight with your HYPE at over 100M merchants worldwide."
-                        graphic={
-                            <div className="absolute inset-0 bg-[url(https://www.ether.fi/videos/cash/fallback_cash.jpg)]" />
-                        }
-                        fade={['bottom']}
-                        className="lg:col-span-2"
-                    />
-
-                    <BentoCard
-                        dark
-                        eyebrow="Earn Yield"
-                        title="Up to 10% APY on HYPE/beHYPE"
-                        description="Earn yield on your HYPE and beHYPE by LP'ing into our yield-bearing vaults."
-                        graphic={
-                            <div className="absolute inset-0 bg-[url(https://www.ether.fi/videos/cash/fallback_cash.jpg)]" />
-                        }
-                        fade={['bottom']}
-                        className="lg:col-span-2 lg:rounded-br-4xl lg:rounded-tr-4xl"
-                    /> */}
                     <BentoCard
                         dark
                         eyebrow="You Own Your Assets"
                         title="Non-Custodial"
-                        description="Your HYPE and beHYPE are stored in your wallet, you are the sole owner of your assets."
+                        description="Your $HYPE and $beHYPE are stored in your wallet, you are the sole owner of your assets."
                         graphic={<Map />}
                         className="lg:col-span-2 lg:rounded-bl-4xl"
                     />
@@ -141,15 +106,15 @@ function BentoSection() {
                         dark
                         eyebrow="Spend Globally"
                         title="Over 100M Accepted Merchants"
-                        description="Buy a coffee or book a flight with your HYPE at over 100M merchants worldwide."
+                        description="Buy a coffee or book a flight with your $HYPE at over 100M merchants worldwide."
                         graphic={<Map />}
                         className="lg:col-span-2"
                     />
                     <BentoCard
                         dark
                         eyebrow="Earn Yield"
-                        title="Up to 10% APY on HYPE/beHYPE"
-                        description="Earn yield on your HYPE and beHYPE by LP'ing into our yield-bearing vaults."
+                        title="Up to 10% APY on $HYPE/$beHYPE"
+                        description="Earn yield on your $HYPE and $beHYPE by LP'ing into our yield-bearing vaults."
                         graphic={<Map />}
                         className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
                     />
