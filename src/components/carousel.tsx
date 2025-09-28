@@ -10,42 +10,42 @@ const payouts = [
         id: 1,
         name: '@crypto_whale',
         pfp: 'https://pbs.twimg.com/profile_images/1905420963128508417/tnL4ltal_400x400.jpg',
-        amount: '2.4 HYPE',
+        amount: '2.4 ETHFI',
         week: '9/9/25'
     },
     {
         id: 2,
         name: '@defi_alpha',
         pfp: 'https://pbs.twimg.com/profile_images/1877880032292388864/aOzokCej_400x400.jpg',
-        amount: '1.8 HYPE',
+        amount: '1.8 ETHFI',
         week: '3/10/25'
     },
     {
         id: 3,
         name: '@etherfi_og',
         pfp: 'https://pbs.twimg.com/profile_images/1615506283502927873/OPwLON_X_400x400.jpg',
-        amount: '3.2 HYPE',
+        amount: '3.2 ETHFI',
         week: '8/10/25'
     },
     {
         id: 4,
         name: '@stake_master',
         pfp: 'https://pbs.twimg.com/profile_images/1964433713686884352/hNB7mr-x_400x400.jpg',
-        amount: '1.5 HYPE',
+        amount: '1.5 ETHFI',
         week: '9/10/25'
     },
     {
         id: 5,
         name: '@liquid_staker',
         pfp: 'https://pbs.twimg.com/profile_images/1967109339585388544/9gwn7Fn6_400x400.jpg',
-        amount: '2.1 HYPE',
+        amount: '2.1 ETHFI',
         week: '3/12/25'
     },
     {
         id: 6,
         name: '@eth_bull',
         pfp: 'https://pbs.twimg.com/profile_images/1956760267330572288/RLKoQJwK_400x400.jpg',
-        amount: '4.7 HYPE',
+        amount: '4.7 ETHFI',
         week: '1/1/25'
     }
 ]
@@ -68,14 +68,14 @@ function CarouselCard({ item }: { item: PayoutItem }) {
                     </div>
                     <div className="flex justify-between">
                         <p className="ml-16 truncate text-sm font-medium text-gray-300">{item.name}</p>
-                        <p className="truncate text-sm font-medium text-blue-300 bg-blue-900/30 border border-blue-700/50 rounded-full px-2 py-0.5">
+                        <p className="truncate text-sm font-medium text-white bg-gray-700/20 border border-white/20 rounded-full px-2 py-0">
                             {item.week}
                         </p>
                     </div>
                 </dt>
                 <dd className="ml-16 flex items-center gap-x-4">
                     <p className="text-2xl font-semibold text-white">{item.amount}</p>
-                    <img src="/HL.svg" alt="Hyperliquid Icon" width={25} height={25} className="" />
+                    <img src="/ethfi-white.png" alt="ETHFI Icon" width={25} height={25} className="" />
                 </dd>
             </div>
         </div>
