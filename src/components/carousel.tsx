@@ -88,8 +88,8 @@ export default function Carousel() {
     return (
         <div className="space-y-4">
             {/* Mini header */}
-            <div className="text-center">
-                <h3 className="text-lg font-semibold text-white">Ether.fi Cash users are earning 3% cash back</h3>
+            <div className="text-center mb-10">
+                <h3 className="text-3xl font-semibold text-white/90">Ether.fi Cash users are earning 3% cash back</h3>
             </div>
 
             {/* Carousel container */}
